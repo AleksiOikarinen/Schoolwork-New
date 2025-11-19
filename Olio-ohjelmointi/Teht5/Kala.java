@@ -9,7 +9,6 @@ public class Kala {
         return id;
     }
 
-    // Metodi setId on ylikuormitettu
     public void setId(int id) {
         this.id = id;
     }
@@ -18,7 +17,6 @@ public class Kala {
         try {
             this.id = Integer.parseInt(id);
         } catch (NumberFormatException e) {
-            // jätetään virhe huomioimatta
         }
     }
 
@@ -34,7 +32,6 @@ public class Kala {
         return paino;
     }
 
-    // Metodi setPaino on ylikuormitettu
     public boolean setPaino(float paino) {
         if (paino >= 0 && paino < 50000) {
             this.paino = paino;
@@ -51,8 +48,7 @@ public class Kala {
         }
     }
 
-    // Kun pääohjelmassa tulostetaan (System.out.println(olioviittaus))
-    // Tulostetaan toString-metodin palauttama arvo
+
     public String toString() {
         return this.id + ": " + this.laji + " (" + this.paino + ")";
     }
