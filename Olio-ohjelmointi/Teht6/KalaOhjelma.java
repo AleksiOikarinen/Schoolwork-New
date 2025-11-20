@@ -24,8 +24,8 @@ public class KalaOhjelma {
         if (!k.setPaino(kysy("Anna kalan paino: ")))           //Jos ei anneta painoa niin tulos 0
         System.out.println("Asennetaan paino 0.");
     }
-    public static String kysy(String teksti) {                      //tulostaa vastaukset näppäimistöltä
-        System.out.print(teksti);
+    public static String kysy(String tiedot) {                      //tulostaa vastaukset näppäimistöltä
+        System.out.print(tiedot);
         return sc.nextLine().trim();
     }
     public static void tulostaKalat(ArrayList<Kala> lista) {
