@@ -3,7 +3,6 @@ package Teht6;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Teht5.Kala;
 
 public class KalaOhjelma {
     
